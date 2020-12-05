@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Form Validator</title>
 </head>
 <body>
-    
+    <div class="container">
+        <form id="form" class="form">
+            <h2>Register with us</h2>
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Enter username..." id="username">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" placeholder="Enter email..." id="email">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter password..." id="password">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="confirmPass">Confirm password</label>
+                <input type="password" placeholder="Repeat the password..." id="confirmPass">
+                <small>Error message</small>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+    <script src="./script.js"></script>
 </body>
 </html>
